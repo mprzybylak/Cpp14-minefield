@@ -14,3 +14,19 @@ src: [cppreference.com: constexpr specifier ](http://en.cppreference.com/w/cpp/l
 
 double(2) - zwykły cast - alternatywny zapis (double)2
 double{2} - castowanie zapobiegające narrowing
+
+### inicjalizacja
+
+Mając klasę w stylu 
+
+class Test {
+public:
+	char character;
+	int value;
+};
+
+można użyć linijki inicjalizacyjnej
+
+Test t1{}; // domyślna inicjalizacja pól
+Test t2{'c'} // pierwsze pole zainicjalizowane 'c' drugie domyślnie
+Test t3{'c', 2} // oba pola zainicjalizowane
