@@ -43,3 +43,7 @@ Pola static wewnatrz funkcji zostana zaincjalizowane tylko raz - przy pierwszym 
 namespace Graph {
 	//...
 }
+
+### Stream
+
+Streamy takie jak ifstream czy ofstream samoczynni się zamkną w momencie opuszczenia scope'u, w którym zostały zadeklarowane.
