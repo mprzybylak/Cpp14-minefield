@@ -1,5 +1,19 @@
 # Computation
 
+## Streamy
+
+### Scope idiom
+
+Streamy takie jak ifstream czy ofstream samoczynni się zamkną w momencie opuszczenia scope'u, w którym zostały zadeklarowane.
+
+### Metody związane z czytaniem plików
+
+przykłady dla ifstream:
+ifs.clear() - jeżeli stream był w stanie "błedu", to clear usunie flagi błędów
+ifs.clear(ios_base::failbit) - jeżeli do clear podamy parametr, to USTAWI on taką flagę w streamie a pozostałe wyzeruje.
+ifs.unget() - "cofnie" stream o ostatnio pobrany obiekt
+ifs.exceptions(ist.exceptions() | ios_base::badbit) - konfigurujemy stream tak aby sam wyrzucał exceptiony tak żebyśmy sami nie musieli tego robić - do metody podajemy flagi oznaczające błędy przy których odpowiedni wyjątek ma być wyrzucony
+
 ## Różne
 
 ### constexpr 
@@ -44,6 +58,3 @@ namespace Graph {
 	//...
 }
 
-### Stream
-
-Streamy takie jak ifstream czy ofstream samoczynni się zamkną w momencie opuszczenia scope'u, w którym zostały zadeklarowane.
