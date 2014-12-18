@@ -1,7 +1,5 @@
 #!/bin/bash
 
-#!/bin/bash
-
 clear
 
 rm -r target/*
