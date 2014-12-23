@@ -13,3 +13,4 @@ cd ./target
 ./$1.out
 
 cd ..
+

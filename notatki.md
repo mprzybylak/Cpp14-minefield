@@ -58,3 +58,14 @@ namespace Graph {
 	//...
 }
 
+### metody const
+
+metoda moze miec slowo const w deklaracji po argumentach co oznacza, ze nie moze ona modyfikowac zadnych wartosci wewnatrz klasy do ktorej przynalezy:
+
+void f() const { ... }
+
+### metody override
+
+metoda moze miec slowo kluczowe override w deklaracji po argumentach, czym zanznaczamy, ze jest to przeciazna funkcja z nadklasy - jezeli metoda nei bedzie spelniac warunkow "przeciazania" (np. nie bedzie nic przeciazac, lub nastapi proba przeciazenia niewritualnej metody ) kompilator zwroci blad
+
+void f() override { ... }

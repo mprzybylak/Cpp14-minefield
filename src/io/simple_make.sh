@@ -9,7 +9,6 @@ cd ..
 mv ./src/$1.out ./target
 cp ./resources/* target
 
-clear
 cd ./target
 ./$1.out
 
